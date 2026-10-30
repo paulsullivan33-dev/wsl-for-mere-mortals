@@ -1,0 +1,23 @@
+Cross-checks run on the guide's Linux build machine, 2026-10-30
+
+== This machine is an ordinary systemd Linux ==
+Linux 7.0.0-39-generic x86_64
+systemd 255 (255.4-1ubuntu8.18)
+
+== The systemd commands chapter 8 tells the reader to expect ==
+UNIT FILE                                    STATE           PRESET
+anacron.service                              enabled         enabled
+apparmor.service                             enabled         enabled
+apt-daily-upgrade.service                    static          -
+apt-daily.service                            static          -
+...
+
+== Files WSL generates are stock Linux files with stock roles ==
+-rw-r--r-- 1 root   root      0 Oct 30 19:33 /etc/fstab
+-rw-r--r-- 2 nobody nogroup 936 Jan  1  1980 /etc/hosts
+-rw-r--r-- 2 nobody nogroup 415 Jan  1  1980 /etc/resolv.conf
+
+== Filesystem types this kernel supports (ext4 among them;
+   a WSL 2 distro's .vhdx is formatted ext4, like any Linux disk) ==
+	ext4
+	btrfs

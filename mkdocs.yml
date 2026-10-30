@@ -1,0 +1,30 @@
+site_name: WSL for Mere Mortals
+site_description: A plain-language guide to the Windows Subsystem for Linux, covering installation, distributions, files in both directions, configuration, services, networking, GUI apps, hardware, backup, and the honest limits.
+site_url: https://paulsullivan33-dev.github.io/wsl-for-mere-mortals/
+copyright: 'Part of <a href="https://paulsullivan33-dev.github.io/mere-mortals/">For Mere Mortals</a> · Text CC BY 4.0, code MIT'
+
+# Guides live at the repo root (nice for GitHub browsing).
+# The deploy workflow copies them into docs/ before building.
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - What WSL Is: what-wsl-is.md
+  - The Moving Parts: the-moving-parts.md
+  - WSL 1 vs WSL 2: wsl1-vs-wsl2.md
+  - Installing WSL: installing-wsl.md
+  - Choosing and Managing Distributions: choosing-and-managing-distros.md
+  - Files Both Ways: files-both-ways.md
+  - Configuring WSL: configuring-wsl.md
+  - systemd and Services: systemd-and-services.md
+  - Networking: networking.md
+  - GUI Apps with WSLg: gui-apps.md
+  - 'Hardware: GPU and USB': hardware-gpu-and-usb.md
+  - Backup, Moving, and Cloning: backup-and-moving.md
+  - Recipes: recipes.md
+  - The Neighbours: the-neighbours.md
+  - Limits: limits.md
+  - Troubleshooting: troubleshooting.md
+  - Glossary: glossary.md
+  - Writing Criteria: criteria.md
